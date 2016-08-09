@@ -1,0 +1,128 @@
+/* ==============================
+   MAIN COLOR
+   ----- red-1 #ff0030 ----------
+   
+   ALL COLORS
+   green - #00c8aa
+   blue - #00b2ca
+   dark - #171724
+   red-1 - #ff0030
+   red-2 - #FF4C05
+   dark-blue - #3446FF
+   purle - #A182D2
+   orange - #E48400
+   pink - #FF4C83
+   
+   default - #222
+   ============================== */
+body ::-moz-selection {
+  background: #1F4E76;
+}
+body ::selection {
+  background: #1F4E76;
+}
+.progress-box .progress-bar {
+  background-color: #1F4E76;
+}
+.service-item i {
+  color: #1F4E76;
+}
+.service-item:hover {
+  border-color: #1F4E76;
+i
+}
+.filter li a:hover {
+  border-bottom: 1px solid #1f4e79;
+}
+.filter li.active a {
+  border-bottom: 1px solid #1F4E76;
+}
+figure.effect-hover figcaption {
+  background: #1F4E76;
+}
+.team-item figcaption small {
+  color: #1F4E76;
+}
+.pricing-inner:hover {
+  border-color: #1F4E76;
+}
+.pricing-inner:hover .pricing-icon,
+.pricing-inner:hover .pricing-title {
+  color: #1F4E76;
+}
+.pricing-inner:hover .btn-coffee{
+  background: #1f4e79;
+  border: 2px solid transparent;
+}
+.pricing-inner:hover .btn-coffee:hover{
+  background: transparent;
+  border: 2px solid #1f4e79;
+  color: #1f4e79;
+}
+.pricing-main .pricing-inner {
+  border-color: #1F4E76;
+}
+.pricing-main .pricing-icon,
+.pricing-main .pricing-title {
+  color: #1F4E76;
+}
+.pricing-main .pricing-button .btn {
+  background: black;
+  border: 2px solid transparent;
+}
+.pricing-main .pricing-button .btn:hover{
+  background: transparent;
+  border: 2px solid black;
+}
+.contact-item span,
+.contact-item i {
+  color: #1f4e79;
+}
+.btn-continue-reading {
+  color: #1F4E76;
+}
+.btn-continue-reading:hover {
+  color: #1F4E76;
+}
+.pagination > li.active a,
+.pagination > li.active span {
+  border-color: #1F4E76;
+  color: #1F4E76;
+}
+.features-icon {
+  color: #1F4E76;
+}
+.btn-coffee.btn-color {
+  background: #1F4E76;
+}
+.btn-coffee.btn-color-w {
+  border: 2px solid #1F4E76;
+  background: #1F4E76;
+}
+span.higl {
+  color: white !important;
+}
+.team-slider .owl-page span {
+  border: 1px solid #1f4e79;
+}
+.team-slider .owl-page.active span {
+  background: #1f4e79;
+}
+@media only screen and (max-width: 768px) {
+  .overlay-left {
+    width: 100%;
+    background: #1F4E76;
+  }
+  .overlay-left div,
+  .overlay-left h1 {
+    color: #fff;
+  }
+  .overlay-right {
+    display: none;
+  }
+  .btn-scroll-alt:before,
+  .btn-scroll-alt:after {
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+  }
+}
