@@ -537,46 +537,62 @@
             </div>
           </div>
           <div class="row blog-masonry mt-60 mt-xs-10">
-            <div class="col-md-4 col-sm-6 post-masonry blog-post"><a href="#">
+            <div class="col-md-4 col-sm-6 post-masonry blog-post"><span onclick="notice1()">
                 <div class="post-thumbnail"><img src="img/blog/blog-1.jpg" alt="" class="resp"></div>
                 <div class="post-content">
                   <h4 class="post-title">What we do</h4>
                   <div class="date-post">September 03, 2015</div>
                   <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem rerum suscipit a aut, ex tempora! Recusandae ratione tempore distinctio modi.</p>
-                </div></a>
+                </div></span>
             </div>
-            <div class="col-md-4 col-sm-6 post-masonry blog-post"><a href="#">
+            <div class="col-md-4 col-sm-6 post-masonry blog-post"><span onclick="notice2()">
                 <div class="post-thumbnail"><img src="img/blog/blog-2.jpg" alt="" class="resp"></div>
                 <div class="post-content">
                   <h4 class="post-title">The last of us</h4>
                   <div class="date-post">September 03, 2015</div>
                   <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem rerum suscipit a aut, ex tempora! Recusandae ratione tempore distinctio modi.</p>
-                </div></a>
+                </div></span>
             </div>
-            <div class="col-md-4 hidden-sm post-masonry blog-post"><a href="#">
+            <div class="col-md-4 hidden-sm post-masonry blog-post"><span onclick="notice3()">
                 <div class="post-thumbnail"><img src="img/blog/blog-3.jpg" alt="" class="resp"></div>
                 <div class="post-content">
                   <h4 class="post-title">Maybe later</h4>
                   <div class="date-post">September 03, 2015</div>
                   <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem rerum suscipit a aut, ex tempora! Recusandae ratione tempore distinctio modi.</p>
-                </div></a>
+                </div></span>
             </div>
           </div>
         </div>
       </section>
 
-      <button onclick="mostrarVentana()">Mostrar</button>
-      <button onclick="ocultarVentana()">Ocultar</button>
-
       <!--Modals-->
       <center>
-          <div id="miVentana" style="position: fixed; width: 73%; top: 0; left: 13%; font-family:Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: normal; border: #333333 3px solid; background-color: #FAFAFA; color: #000000; display:none; z-index:1;">
-          Aquí pones tu contenido web
-          </div>
+        <div  id="winNotice1" class="modalEstilos text-justify">
+          Noticia 1<br>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt fugit nam nisi doloribus odio explicabo ut reprehenderit vel ratione modi necessitatibus, consequuntur corporis, at quas laborum maiores quidem iste, ducimus.
+          <center>  
+            <br>
+            <button class="btn btn-coffee btn-border" onclick="closeNotice1()">Cerrar</button>
+          </center>
+        </div>
+        <div  id="winNotice2" class="modalEstilos text-justify">
+          Noticia 2<br>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt fugit nam nisi doloribus odio explicabo ut reprehenderit vel ratione modi necessitatibus, consequuntur corporis, at quas laborum maiores quidem iste, ducimus.
+          <center>  
+            <br>
+            <button class="btn btn-coffee btn-border" onclick="closeNotice2()">Cerrar</button>
+          </center>
+        </div>
+        <div  id="winNotice3" class="modalEstilos text-justify">
+          Noticia 3<br>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt fugit nam nisi doloribus odio explicabo ut reprehenderit vel ratione modi necessitatibus, consequuntur corporis, at quas laborum maiores quidem iste, ducimus.
+          <center>  
+            <br>
+            <button class="btn btn-coffee btn-border" onclick="closeNotice3()">Cerrar</button>
+          </center>
+        </div>          
       </center>
       
-
-
       <!--Contacts section-->
       <section id="contacts" class="pt-0">
         <div class="container">
@@ -596,7 +612,7 @@
                 <p>(55) 4533-4220</p>
               </div>
               <div class="col-sm-4 contact-item"><span class="icon-map-pin"></span>
-                <p>Las Américas, Ecatepec,<br>CP 55119, México</p>
+                <p>Centro las Américas<br>Ecatepec de Morelos<br>México</p>
               </div>
               <div class="col-sm-4 contact-item"><span class="icon-envelope"></span><a href="mailto:contacto@lappsii.esy.es" target="_blank">contacto@lappsii.esy.es</a></div>
             </div>
@@ -628,7 +644,7 @@
         </div>
         <!--Google maps-->
         <div class="google-map">
-          <div id="map-canvas" data-address="Belt Parkway, Queens, NY, United States"></div>
+          <div id="map-canvas" data-address="Centro Las Américas, Ecatepec de Morelos, México"></div>
           <div class="map-section">
             <div class="map-toggle">
               <div class="toggle-text alt-font">
@@ -678,15 +694,37 @@
     <script src="js/style.changer.js"></script>
 
     <script>
-      function mostrarVentana()
+      function notice1()
       {
-          var ventana = document.getElementById("miVentana");
+          var ventana = document.getElementById("winNotice1");
           ventana.style.marginTop = "100px";
           ventana.style.display = "block";
       }
-      function ocultarVentana()
+      function notice2()
       {
-          var ventana = document.getElementById("miVentana");
+          var ventana = document.getElementById("winNotice2");
+          ventana.style.marginTop = "100px";
+          ventana.style.display = "block";
+      }
+      function notice3()
+      {
+          var ventana = document.getElementById("winNotice3");
+          ventana.style.marginTop = "100px";
+          ventana.style.display = "block";
+      }
+      function closeNotice1()
+      {
+          var ventana = document.getElementById("winNotice1");
+          ventana.style.display = "none";
+      }
+      function closeNotice2()
+      {
+          var ventana = document.getElementById("winNotice2");
+          ventana.style.display = "none";
+      }
+      function closeNotice3()
+      {
+          var ventana = document.getElementById("winNotice3");
           ventana.style.display = "none";
       }
     </script>
