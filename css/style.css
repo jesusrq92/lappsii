@@ -53,6 +53,11 @@ ul {
   color: #1f4e79;
 }
 
+.promoBlack{
+  color: black;
+}
+
+
 .circleServices{
   width:80px;
   height: 80px;
@@ -69,8 +74,9 @@ ul {
 .modalEstilos{
   position: fixed; 
   width: 73%; 
+  height: 72vh; /*borrar*/
   top: 0; 
-  left: 13%; 
+  left: 14%; 
   font-family:'Raleway', sans-serif; 
   font-size: 15px; 
   font-weight: normal; 
@@ -83,6 +89,7 @@ ul {
   z-index:1;
   animation-name: fadeIn;
   animation-duration: .5s;
+  overflow: scroll;
 }
 
 @keyframes fadeIn{
@@ -1159,6 +1166,10 @@ section {
 }
 .form-control:focus{
   border-color: white;
+}
+
+.modalEnviar{
+  float: none !important;
 }
 
 /* ==============================
@@ -3528,6 +3539,10 @@ span.icon-close {
   }
   .owl-pagination {
     bottom: 10px;
+  }
+  .modalEstilos {
+    height: 75vh !important;
+    overflow: scroll;
   }
 }
 @-moz-keyframes slideShow {
