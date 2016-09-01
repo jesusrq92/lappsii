@@ -57,7 +57,6 @@ ul {
   color: black;
 }
 
-
 .circleServices{
   width:80px;
   height: 80px;
@@ -67,6 +66,15 @@ ul {
   padding-left: 12px !important;
 }
 
+.fa-check{
+  color: #1f4e79;
+}
+
+.nav-logo{
+  display: none;
+}
+
+
 /* ==============================
    modales
    ============================== */
@@ -74,7 +82,6 @@ ul {
 .modalEstilos{
   position: fixed; 
   width: 73%; 
-  height: 72vh; /*borrar*/
   top: 0; 
   left: 14%; 
   font-family:'Raleway', sans-serif; 
@@ -1448,7 +1455,7 @@ a.logo:hover {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0 10px;
-  text-align: left;
+  text-align: center;
   border-left: none;
   border-right: none;
   border-bottom: 1px solid rgba(255,255,255,0.065);
@@ -1507,6 +1514,7 @@ a.logo:hover {
   filter: none;
 }
 .navbar-mobile {
+  margin-top: -55px !important; /*modificado por el logo*/
   display: none;
   float: right;
   vertical-align: middle;
@@ -3391,6 +3399,11 @@ span.icon-close {
   .owl-pagination {
     bottom: 25px;
   }
+  .nav-logo{
+  display: initial;
+  margin-right: 104px !important;
+  width: 66px !important;
+  }
 }
 @media only screen and (max-width: 992px) {
   .hs-line-first,
@@ -3508,6 +3521,12 @@ span.icon-close {
   }
   .service-item .service-desc p {
     font-size: 15px;
+  }
+  .modalEstilos>ul>li{
+    margin-left: -26px;
+  }
+  .modalEstilos{
+    height: 72vh;
   }
 }
 @media only screen and (max-width: 480px) {
