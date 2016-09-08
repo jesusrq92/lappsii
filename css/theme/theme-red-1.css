@@ -16,55 +16,57 @@
    default - #222
    ============================== */
 body ::-moz-selection {
-  background: #1F4E76;
+  background: #0d3c67;
 }
 body ::selection {
-  background: #1F4E76;
+  background: #0d3c67;
 }
 .progress-box .progress-bar {
-  background-color: #1F4E76;
+  background-color: #0d3c67;
 }
 .service-item i {
-  color: #1F4E76;
+  color: #0d3c67;
 }
 .service-item:hover {
-  border-color: #1F4E76;
+  border-color: #0d3c67;
 i
 }
 .filter li a:hover {
-  border-bottom: 1px solid #1f4e79;
+  border-bottom: 1px solid #0d3c67;
 }
 .filter li.active a {
-  border-bottom: 1px solid #1F4E76;
+  border-bottom: 1px solid #0d3c67;
 }
 figure.effect-hover figcaption {
-  background: #1F4E76;
+  background: #0d3c67;
 }
 .team-item figcaption small {
-  color: #1F4E76;
+  color: #0d3c67;
 }
 .pricing-inner:hover {
-  border-color: #1F4E76;
+  border-color: #0d3c67;
 }
-.pricing-inner:hover .pricing-icon,
-.pricing-inner:hover .pricing-title {
-  color: #1F4E76;
+.pricing-inner:hover .pricing-icon{
+  color: #0d3c67;
+}
+.pricing-inner:hover .pricing-title{
+  background-color: #0d3c67;
 }
 .pricing-inner:hover .btn-coffee{
-  background: #1f4e79;
+  background: #0d3c67;
   border: 2px solid transparent;
 }
 .pricing-inner:hover .btn-coffee:hover{
   background: transparent;
-  border: 2px solid #1f4e79;
-  color: #1f4e79;
+  border: 2px solid #0d3c67;
+  color: #0d3c67;
 }
 .pricing-main .pricing-inner {
-  border-color: #1F4E76;
+  border-color: #0d3c67;
 }
 .pricing-main .pricing-icon,
 .pricing-main .pricing-title {
-  color: #1F4E76;
+  color: #0d3c67;
 }
 .pricing-main .pricing-button .btn {
   background: black;
@@ -76,42 +78,42 @@ figure.effect-hover figcaption {
 }
 .contact-item span,
 .contact-item i {
-  color: #1f4e79;
+  color: #0d3c67;
 }
 .btn-continue-reading {
-  color: #1F4E76;
+  color: #0d3c67;
 }
 .btn-continue-reading:hover {
-  color: #1F4E76;
+  color: #0d3c67;
 }
 .pagination > li.active a,
 .pagination > li.active span {
-  border-color: #1F4E76;
-  color: #1F4E76;
+  border-color: #0d3c67;
+  color: #0d3c67;
 }
 .features-icon {
-  color: #1F4E76;
+  color: #0d3c67;
 }
 .btn-coffee.btn-color {
-  background: #1F4E76;
+  background: #0d3c67;
 }
 .btn-coffee.btn-color-w {
-  border: 2px solid #1F4E76;
-  background: #1F4E76;
+  border: 2px solid #0d3c67;
+  background: #0d3c67;
 }
 span.higl {
   color: white !important;
 }
 .team-slider .owl-page span {
-  border: 1px solid #1f4e79;
+  border: 1px solid #0d3c67;
 }
 .team-slider .owl-page.active span {
-  background: #1f4e79;
+  background: #0d3c67;
 }
 @media only screen and (max-width: 768px) {
   .overlay-left {
     width: 100%;
-    background: #1F4E76;
+    background: #0d3c67;
   }
   .overlay-left div,
   .overlay-left h1 {

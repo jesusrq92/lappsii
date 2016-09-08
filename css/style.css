@@ -2,7 +2,7 @@
    Global styles
    ============================== */
 
-/*color es #1f4e79*/
+/*color es #0d3c67*/
 
 html {
   overflow-y: scroll;
@@ -50,7 +50,7 @@ ul {
 }
 
 .azulTitles{
-  color: #1f4e79;
+  color: #0d3c67;
 }
 
 .promoBlack{
@@ -60,18 +60,29 @@ ul {
 .circleServices{
   width:80px;
   height: 80px;
-  border: 1px solid #1f4e79;
+  border: 1px solid #0d3c67;
   border-radius: 50%;
   padding-top: 15px !important;
   padding-left: 12px !important;
 }
 
 .fa-check{
-  color: #1f4e79;
+  color: #0d3c67;
 }
 
 .nav-logo{
   display: none;
+}
+
+.iconPlans{
+  color: #0d3c67;
+  font-size: 17px !important;
+  padding-left: 1px;
+
+}
+
+.fontWEB{
+  font-size: 20px;
 }
 
 /* ==============================
@@ -86,7 +97,7 @@ ul {
   font-family:'Raleway', sans-serif; 
   font-size: 15px; 
   font-weight: normal; 
-  border: 8px solid #1f4e79;
+  border: 8px solid #0d3c67;
   box-shadow: 0px 0px 10px black; 
   background-color: white; 
   color: #353535; 
@@ -212,7 +223,7 @@ h3 span{
   position: absolute;
   right:0;
   width: 0;
-  border-left: 1px solid #1f4e79;
+  border-left: 1px solid #0d3c67;
 }
 #m_nosotros, #m_servicios{
   background-color: white;
@@ -404,7 +415,7 @@ img.resp {
   background: rgba(0,0,0,0.5);
 }
 .bg-dark-80:before {
-  background: #1f4e79;
+  background: #0d3c67;
 }
 .bg-dark-90:before {
   background: rgba(0,0,0,0.9);
@@ -626,7 +637,7 @@ section {
   position: fixed;
   top: 0;
   left: 0;
-  background: #1f4e79;
+  background: #0d3c67;
   z-index: 100000;
 }
 .loader {
@@ -641,7 +652,7 @@ section {
   border-top: 2px solid white;
   border-right: 2px solid white;
   border-bottom: 2px solid white;
-  border-left: 14px solid grey;
+  border-left: 10px solid grey;
   -webkit-border-radius: 50%;
   border-radius: 50%;
   -webkit-animation: spinner 700ms infinite linear;
@@ -663,7 +674,12 @@ section {
   font-size: 12px;
   letter-spacing: 6px;
   color: white;
+  animation: animateLoader 1.5s infinite;
 }
+  @keyframes animateLoader {
+    from {opacity: .5;}
+    to {opacity: 1;}
+  }
 .mfp-preloader {
   width: 50px !important;
   height: 50px !important;
@@ -1292,7 +1308,7 @@ a.logo:hover {
   top: 0;
   left: 0;
   text-align: left;
-  background: #1f4e79;
+  background: #0d3c67;
   z-index: 1030;
   -webkit-transition: height 0.27s cubic-bezier(0, 0, 0.58, 1);
   -moz-transition: height 0.27s cubic-bezier(0, 0, 0.58, 1);
@@ -1570,7 +1586,7 @@ a.logo:hover {
   filter: none;
 }
 .navbar-mobile {
-  margin-top: -55px !important; /*modificado por el logo*/
+  margin-top: 0px !important; 
   display: none;
   float: right;
   vertical-align: middle;
@@ -2242,7 +2258,7 @@ span.hs {
   padding-top: 3px;
   position: relative;
   overflow: visible;
-  background-color: #1f4e79 !important;
+  background-color: #0d3c67 !important;
   font-size: 11px;
   color: #000;
   text-align: left;
@@ -2296,7 +2312,7 @@ span.hs {
   transition: all 0.3s ease;
 }
 .service-item i {
-  color: #1f4e79 !important;
+  color: #0d3c67 !important;
   position: relative;
   top: 100px;
   display: inline-block;
@@ -2338,12 +2354,12 @@ span.hs {
   transform: scale(0);
 }
 .service-item:hover {
-  border-color: #1f4e79 !important;
+  border-color: #0d3c67 !important;
 }
 .service-item:hover i {
   top: -30px;
   color: white !important;
-  background: #1f4e79;
+  background: #0d3c67;
 }
 .service-item:hover h5 {
   top: -30px;
@@ -2380,7 +2396,7 @@ span.hs {
   border-bottom: 1px solid #00b2ca;
 }
 .filter li.active a {
-  border-bottom: 1px solid #1f4e79 !important;
+  border-bottom: 1px solid #0d3c67 !important;
 }
 .work-item {
   text-align: center;
@@ -2391,7 +2407,7 @@ span.hs {
   width: 100%;
   position: relative;
   cursor: pointer;
-  background-color: #1f4e79;
+  background-color: #0d3c67;
 }
 
 .work-item .figure:hover{
@@ -2584,7 +2600,7 @@ span.hs {
   margin-left: 100px;
 }
 .team-item figcaption small {
-  color: #1f4e79 !important;
+  color: #0d3c67 !important;
 }
 /* ==============================
    Testimonial
@@ -2626,14 +2642,13 @@ span.hs {
   border-color: #00b2ca;
 }
 .pricing-main .pricing-inner {
-  border-color: #1f4e79;
+  border-color: #0d3c67;
 }
 .pricing-content {
   position: relative;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 30px 20px;
   text-align: center;
   overflow: hidden;
 }
@@ -2651,7 +2666,8 @@ span.hs {
 }
 .pricing-title {
   position: relative;
-  margin-bottom: 40px;
+  background-color: black;
+  color: white;
   font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
@@ -2665,7 +2681,7 @@ span.hs {
 }
 .pricing-list {
   margin: 0 -20px 30px;
-  padding: 0;
+  padding-left: 20px;
   color: #777;
   font-size: 12px;
   font-weight: 400;
@@ -2676,6 +2692,8 @@ span.hs {
   padding: 12px 20px;
   list-style: none;
   border-bottom: 1px solid #f1f1f1;
+  text-transform: none;
+  text-align: left;
 }
 .pricing-list li b {
   font-weight: 400;
@@ -2699,7 +2717,8 @@ span.hs {
 }
 .pricing-button {
   margin: 30px -20px 0;
-  padding-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-top: 1px solid #f1f1f1;
 }
 .pricing-period {
@@ -2711,8 +2730,8 @@ span.hs {
   color: #00b2ca;
 }
 .pricing-main .pricing-button .btn {
-  background: #1f4e79;
-  border: 1px solid #1f4e79;
+  background: #0d3c67;
+  border: 1px solid #0d3c67;
 }
 /* ==============================
    Contacts section
@@ -2791,7 +2810,7 @@ span.hs {
   top: 0;
   left: 0;
   padding: 0 !important;
-  background: #1f4e79;
+  background: #0d3c67;
   z-index: 2;
   cursor: pointer;
   -webkit-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
@@ -2870,7 +2889,7 @@ a.scroll-to-top {
 }
 
 a.scroll-to-top:hover{
-  color: #1f4e79;
+  color: #0d3c67;
 }
 /* ==============================
    Blog
@@ -3459,9 +3478,15 @@ span.icon-close {
     bottom: 25px;
   }
   .nav-logo{
+  position: absolute;
   display: initial;
-  margin-right: 104px !important;
+  margin-left: -85px !important;
   width: 66px !important;
+  animation: animateLogo 1.5s ease infinite alternate;
+  }
+  @keyframes animateLogo {
+    from {margin-top: 0;}
+    to {margin-top: 10px;}
   }
 }
 @media only screen and (max-width: 992px) {
