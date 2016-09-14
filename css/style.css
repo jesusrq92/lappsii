@@ -85,15 +85,16 @@ ul {
   font-size: 20px;
 }
 
+
 /* ==============================
    modales
    ============================== */
 
 .modalEstilos{
   position: fixed; 
-  width: 73%; 
+  width: 60%; 
   top: 0; 
-  left: 14%; 
+  left: 20%; 
   font-family:'Raleway', sans-serif; 
   font-size: 15px; 
   font-weight: normal; 
@@ -3488,6 +3489,10 @@ span.icon-close {
     from {margin-top: 0;}
     to {margin-top: 10px;}
   }
+  .modalEstilos{
+    width: 90%;
+    left: 5%;
+  }
 }
 @media only screen and (max-width: 992px) {
   .hs-line-first,
@@ -3646,6 +3651,15 @@ span.icon-close {
   .modalEstilos {
     height: 75vh !important;
     overflow: scroll;
+  }
+}
+@media screen and (max-width: 400px) {
+  .perfilMembers {
+    width: 160px;
+    height: 160px;
+  }
+  .mt-30 {
+    margin-top: 20px;
   }
 }
 @-moz-keyframes slideShow {

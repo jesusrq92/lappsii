@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="root">
   <head>
     <meta charset="utf-8">
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
@@ -18,6 +18,7 @@
     <link href="css/vertical.min.css" rel="stylesheet">
     <link href="css/style.changer.css" rel="stylesheet">
     <link id="theme" href="css/theme/theme-red-1.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script>
       new WOW().init();
@@ -227,7 +228,7 @@
         </div>
       </section>
       <!--Portfolio Start-->
-      <section id="portfolio" class="bg-light pb-60 parallax2">
+      <section id="portfolio" class="bg-light pb-60 parallax2" ng-controller="index">
         <div class="container">
           <div class="row mt-40 mt-xs-20">
             <div class="col-md-12 text-center">
@@ -238,8 +239,7 @@
           </div>
         </div>
         <ul class="filter text-center mt-60 mt-xs-30">
-          <li class="active"><a href="index.html#" data-filter="*">Todos</a></li>
-          <li><a href="index.html#" data-filter=".branding">Desktop</a></li>
+          <li class="active"><a href="index.html#" data-filter=".branding">Desktop</a></li>
           <li><a href="index.html#" data-filter=".photography">Móvil</a></li>
         </ul>
         <div class="container">
@@ -295,7 +295,7 @@
                 </div>
               </div>
             <!-- movil -->
-              <div class="col-md-4 col-sm-4 col-xs-12 work-item photography wow fadeIn">
+              <div class="col-md-4 col-sm-4 col-xs-12 work-item photography wow fadeIn" ng-show="movilVisible">
                 <div class="figure effect-hover"><img src="img/portfolio/movil0.jpg" alt="">
                   <div class="figcaption">
                     <h5 class="alt-font">Sistema SCAP</h5>
@@ -303,7 +303,7 @@
                   </div><a href="http://noba.mx" target="_blank">Ver más</a>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-4 col-xs-12 work-item photography wow fadeIn">
+              <div class="col-md-4 col-sm-4 col-xs-12 work-item photography wow fadeIn" ng-show="movilVisible">
                 <div class="figure effect-hover"><img src="img/portfolio/movil1.jpg" alt="">
                   <div class="figcaption">
                     <h5 class="alt-font">Noba</h5>
@@ -311,7 +311,7 @@
                   </div><a href="http://noba.mx" target="_blank">Ver más</a>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-4 col-xs-12 work-item photography wow fadeIn">
+              <div class="col-md-4 col-sm-4 col-xs-12 work-item photography wow fadeIn" ng-show="movilVisible">
                 <div class="figure effect-hover"><img src="img/portfolio/movil2.jpg" alt="">
                   <div class="figcaption">
                     <h5 class="alt-font">Autovan</h5>
@@ -319,7 +319,7 @@
                   </div><a href="http://clientes.concepthaus.mx/autovan" target="_blank">Ver más</a>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-4 col-xs-12 work-item photography wow fadeIn">
+              <div class="col-md-4 col-sm-4 col-xs-12 work-item photography wow fadeIn" ng-show="movilVisible">
                   <div class="figure effect-hover"><img src="img/portfolio/movil3.jpg" alt="">
                     <div class="figcaption">
                       <h5 class="alt-font">Pacsa</h5>
@@ -327,7 +327,7 @@
                     </div><a href="http://clientes.concepthaus.mx/pacsa" target="_blank">Ver más</a>
                   </div>
               </div>
-              <div class="col-md-4 col-sm-4 col-xs-12 work-item photography wow fadeIn">
+              <div class="col-md-4 col-sm-4 col-xs-12 work-item photography wow fadeIn" ng-show="movilVisible">
                 <div class="figure effect-hover"><img src="img/portfolio/movil4.jpg" alt="">
                   <div class="figcaption">
                     <h5 class="alt-font">Hangar</h5>
@@ -335,7 +335,7 @@
                   </div><a href="http://hangar52.mx" target="_blank">Ver más</a>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-4 col-xs-12 work-item photography wow fadeIn">
+              <div class="col-md-4 col-sm-4 col-xs-12 work-item photography wow fadeIn" ng-show="movilVisible">
                 <div class="figure effect-hover"><img src="img/portfolio/movil5.jpg" alt="">
                   <div class="figcaption">
                     <h5 class="alt-font">Lomas de la Cañada</h5>
@@ -537,7 +537,7 @@
                         <li><i class="fa fa-rss iconPlans"></i> <b>Ancho de banda</b><br>ilimitado</li>
                       </ul>
                     </div>
-                    <div class="pricing-cost"><sup>$</sup>11,999 <sup>00</sup></div>
+                    <div class="pricing-cost"><sup>$</sup>13,999 <sup>00</sup></div>
                     <div class="pricing-period"><br>*Plan sujeto a cambios</div>
                     <div class="pricing-button"><a href="#pricing" onclick="contactar()" class="btn btn-coffee">Cotizar</a></div>
                   </div>
@@ -551,7 +551,7 @@
                     <div class="pricing-title"><span class="fontWEB">WEB</span><br>Premium</div>
                     <div class="pricing-features alt-font">
                       <ul class="sf-list pricing-list">
-                        <li><i class="fa fa-laptop iconPlans"></i> <b>Desarrollo sitio web</b><br>11 secciones</li>
+                        <li><i class="fa fa-laptop iconPlans"></i> <b>Desarrollo sitio web</b><br>12 secciones</li>
                         <li><i class="fa fa-globe iconPlans"></i> <b>Registro de Dominio</b><br>1 año gratis de dominio .com</li>
                         <li><i class="fa fa-building-o iconPlans"></i> <b>Hospedaje Web</b><br>1 año gratis de hospedaje web</li>
                         <li><i class="fa fa-mobile iconPlans"></i> <b>Diseño responsivo</b><br>Sitio adaptable móviles</li>
@@ -562,7 +562,7 @@
                         <li><i class="fa fa-rss iconPlans"></i> <b>Ancho de banda</b><br>ilimitado</li>
                       </ul>
                     </div>
-                    <div class="pricing-cost"><sup>$</sup>13,999 <sup>00</sup></div>
+                    <div class="pricing-cost"><sup>$</sup>16,999 <sup>00</sup></div>
                     <div class="pricing-period"><br>*Plan sujeto a cambios</div>
                     <div class="pricing-button"><a href="#pricing" onclick="contactar()" class="btn btn-coffee">Cotizar</a></div>
                   </div>
@@ -744,7 +744,7 @@
           <div class="row mt-60 mt-xs-30">
             <div class="col-md-8 col-md-offset-2 text-center">
               <div class="col-sm-4 contact-item wow slideInLeft"><span class="icon-phone"></span>
-                <p>(55) 4533-4220<br>(55) 1617-2827</p>
+                <p>(55) 45.33.42.20<br>(55) 16.17.28.27</p>
               </div>
               <div class="col-sm-4 contact-item wow slideInLeft"><span class="icon-map-pin"></span>
                 <p>Centro las Américas<br>Ecatepec de Morelos<br>México</p>
@@ -823,6 +823,7 @@
     <script src="js/main.js"></script>
     <script src="js/jquery.ajaxchimp.min.js"></script>
     <script src="js/contact-form.js"></script>
+    <script src="js/modules/root.js"></script>
     <!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
     
     <!--Delete after config-->
