@@ -665,7 +665,7 @@ section {
 }
 .loader-text {
   position: absolute;
-  top: 50%;
+  top: 51%;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -3653,13 +3653,30 @@ span.icon-close {
     overflow: scroll;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 399px) {
   .perfilMembers {
     width: 160px;
     height: 160px;
   }
   .mt-30 {
     margin-top: 20px;
+  }
+  .hs-line-2{
+    margin-bottom: 20px;
+  }
+  .parallax2, .parallax3{
+    background-image: none;
+    background-color: white;
+  }
+  #m_portafolio, #m_promos{
+    background-image: none;
+    background-color: white;
+  }
+  .photography{
+    display: none;
+  }
+  .filter li {
+    display: none;
   }
 }
 @-moz-keyframes slideShow {

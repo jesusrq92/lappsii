@@ -2,8 +2,8 @@ angular.module('root', [])
     .controller("index", ["$scope", function ($scope) {
     	
       	//Portafolio
-      	$scope.movilVisible = false;
-
+      	// $scope.desktopVisible = true;
+      	
     }]);
 
 

@@ -239,7 +239,8 @@
           </div>
         </div>
         <ul class="filter text-center mt-60 mt-xs-30">
-          <li class="active"><a href="index.html#" data-filter=".branding">Desktop</a></li>
+          <li class="active"><a href="index.html#" data-filter="*">Todos</a></li>
+          <li><a href="index.html#" data-filter=".branding">Desktop</a></li>
           <li><a href="index.html#" data-filter=".photography">Móvil</a></li>
         </ul>
         <div class="container">
@@ -295,7 +296,7 @@
                 </div>
               </div>
             <!-- movil -->
-              <div class="col-md-4 col-sm-4 col-xs-12 work-item photography wow fadeIn" ng-show="movilVisible">
+              <div class="col-md-4 col-sm-4 col-xs-12 work-item photography wow fadeIn">
                 <div class="figure effect-hover"><img src="img/portfolio/movil0.jpg" alt="">
                   <div class="figcaption">
                     <h5 class="alt-font">Sistema SCAP</h5>
@@ -303,7 +304,7 @@
                   </div><a href="http://noba.mx" target="_blank">Ver más</a>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-4 col-xs-12 work-item photography wow fadeIn" ng-show="movilVisible">
+              <div class="col-md-4 col-sm-4 col-xs-12 work-item photography wow fadeIn">
                 <div class="figure effect-hover"><img src="img/portfolio/movil1.jpg" alt="">
                   <div class="figcaption">
                     <h5 class="alt-font">Noba</h5>
@@ -311,7 +312,7 @@
                   </div><a href="http://noba.mx" target="_blank">Ver más</a>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-4 col-xs-12 work-item photography wow fadeIn" ng-show="movilVisible">
+              <div class="col-md-4 col-sm-4 col-xs-12 work-item photography wow fadeIn">
                 <div class="figure effect-hover"><img src="img/portfolio/movil2.jpg" alt="">
                   <div class="figcaption">
                     <h5 class="alt-font">Autovan</h5>
@@ -319,7 +320,7 @@
                   </div><a href="http://clientes.concepthaus.mx/autovan" target="_blank">Ver más</a>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-4 col-xs-12 work-item photography wow fadeIn" ng-show="movilVisible">
+              <div class="col-md-4 col-sm-4 col-xs-12 work-item photography wow fadeIn">
                   <div class="figure effect-hover"><img src="img/portfolio/movil3.jpg" alt="">
                     <div class="figcaption">
                       <h5 class="alt-font">Pacsa</h5>
@@ -327,7 +328,7 @@
                     </div><a href="http://clientes.concepthaus.mx/pacsa" target="_blank">Ver más</a>
                   </div>
               </div>
-              <div class="col-md-4 col-sm-4 col-xs-12 work-item photography wow fadeIn" ng-show="movilVisible">
+              <div class="col-md-4 col-sm-4 col-xs-12 work-item photography wow fadeIn">
                 <div class="figure effect-hover"><img src="img/portfolio/movil4.jpg" alt="">
                   <div class="figcaption">
                     <h5 class="alt-font">Hangar</h5>
@@ -335,7 +336,7 @@
                   </div><a href="http://hangar52.mx" target="_blank">Ver más</a>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-4 col-xs-12 work-item photography wow fadeIn" ng-show="movilVisible">
+              <div class="col-md-4 col-sm-4 col-xs-12 work-item photography wow fadeIn">
                 <div class="figure effect-hover"><img src="img/portfolio/movil5.jpg" alt="">
                   <div class="figcaption">
                     <h5 class="alt-font">Lomas de la Cañada</h5>
@@ -874,6 +875,9 @@
           var ventana = document.getElementById("winNotice3");
           ventana.style.display = "none";
       }
+    </script>
+    <script>
+      $(".active").trigger('click');
     </script>
 
   </body>
