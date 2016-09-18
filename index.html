@@ -18,12 +18,18 @@
     <link href="css/vertical.min.css" rel="stylesheet">
     <link href="css/style.changer.css" rel="stylesheet">
     <link id="theme" href="css/theme/theme-red-1.css" rel="stylesheet">
+    <!-- sweet alert -->
+    <link rel="stylesheet" type="text/css" href="sweetalert/dist/sweetalert.css">
+    <script src="sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Angular -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <!-- WOW -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script>
       new WOW().init();
     </script>
   </head>
+
   <body class="appear-animate">
     <!-- Page Loader Start-->
     <div class="page-loader">
@@ -127,7 +133,7 @@
           <div class="row mt-60 mt-xs-30">
             <div class="col-md-8 col-md-offset-2 text-center">
               <blockquote data-wow-delay="0.1s" data-wow-duration="1s" class="about-quote wow fadeInUp">
-                <p>Lappsii es una empresa innovadora y comprometedora altamente capacitada con más de 3 años de experiencia para brindar un servicio de calidad a nuestros clientes. <br>Estamos conscientes de que este nuevo paradigma del desarrollo es una potente herramienta para que tu empresa o idea tenga éxito.</p>
+                <p>Lappsii es una empresa innovadora y comprometida altamente capacitada con más de 3 años de experiencia para brindar un servicio de calidad a nuestros clientes. <br>Estamos conscientes de que este nuevo paradigma del desarrollo es una potente herramienta para que tu empresa o idea tenga éxito.</p>
                 <p>La web se ha convertido en un elemento central de innovación en empresas de todos los sectores, así que si nos queremos mantener actualizados, necesitamos hacerlo parte de nuestro arsenal.</p>
                 <footer class="about-quote-author">Jesús Ricaño, Web Developer | Fundador</footer>
               </blockquote>
@@ -620,7 +626,7 @@
           Contactar<br>
           <div class="row">
             <div class="col-md-8 col-md-offset-2 mt-40">
-              <form id="contact-form" class="form form-contact" action="#.php" method="POST">
+              <form id="lappsiiForm1" class="form form-contact" method="POST">
                 <div class="col-md-12">
                   <input id="input-name" name="name" type="text" placeholder="Nombre*" class="form-control input-md" required>
                 </div>
@@ -636,10 +642,8 @@
                 <div class="col-md-6">
                   <div id="send-result" class="mt-20"></div>
                 </div>
-                <div class="col-md-12">
-                  <center>
-                    <button id="submit-message" class="btn btn-coffee btn-medium modalEnviar">Enviar</button> 
-                  </center>
+                <div class="col-md-6">
+                  <button id="submitForm" type="submit" class="btn btn-coffee btn-medium">Enviar</button>
                 </div>
               </form>
             </div>
@@ -725,8 +729,7 @@
             <button class="btn btn-coffee btn-border" onclick="closeNotice3()">Cerrar</button>
           </center>
         </div>          
-      </center>
-      
+      </center>      
       <!--Contacts section-->
       <section id="contacts" class="pt-0">
         <div class="container">
@@ -755,7 +758,7 @@
           </div>
           <div class="row">
             <div class="col-md-8 col-md-offset-2 mt-40">
-              <form id="contact-form" class="form form-contact" action="#.php" method="POST">
+              <form id="lappsiiForm2" class="form form-contact" method="POST">
                 <div class="col-md-12">
                   <input id="input-name" name="name" type="text" placeholder="Nombre*" class="form-control input-md" required>
                 </div>
@@ -772,12 +775,16 @@
                   <div id="send-result" class="mt-20"></div>
                 </div>
                 <div class="col-md-6">
-                  <button id="submit-message" class="btn btn-coffee btn-medium">Enviar</button>
+                  <button id="submitForm" type="submit" class="btn btn-coffee btn-medium">Enviar</button>
                 </div>
               </form>
             </div>
           </div>
         </div>
+
+        <!-- Div donde pone resultado del php -->
+        <div id="DivForm"></div>
+
         <!--Google maps-->
         <div class="google-map">
           <div id="map-canvas" data-address="Centro Las Américas, Ecatepec de Morelos, México"></div>
@@ -797,10 +804,9 @@
       <footer class="page-footer">
         <div class="container text-center">
           <!-- Social links-->
-          <!-- Social links-->
           <div class="social-links">
             <a href="https://www.facebook.com/lappsii/" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
-            <a href="#" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://twitter.com/lappsii" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
             <a href="mailto:contacto@lappsii.com" title="Email"><i class="fa fa-envelope"></i></a>
           </div>
           <div class="copy-right mt-50"><a href="index.html" class="alt-font">© Lappsii 2016</a>
@@ -817,7 +823,7 @@
     <script src="js/plagins.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
-    <script src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5h017Dor9cckkLwDxlrRZ-lV6Kr_x060" type="text/javascript"></script>
     <script src="js/gmap3.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/jquery.fitvids.js"></script>
@@ -825,60 +831,11 @@
     <script src="js/jquery.ajaxchimp.min.js"></script>
     <script src="js/contact-form.js"></script>
     <script src="js/modules/root.js"></script>
+    <script src="js/operaciones.js"></script>
     <!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
-    
+   
     <!--Delete after config-->
     <script src="js/style.changer.js"></script>
-
-    <script>
-      function contactar()
-      {
-          var ventana = document.getElementById("winContactar");
-          ventana.style.marginTop = "100px";
-          ventana.style.display = "block";
-      }
-      function notice1()
-      {
-          var ventana = document.getElementById("winNotice1");
-          ventana.style.marginTop = "100px";
-          ventana.style.display = "block";
-      }
-      function notice2()
-      {
-          var ventana = document.getElementById("winNotice2");
-          ventana.style.marginTop = "100px";
-          ventana.style.display = "block";
-      }
-      function notice3()
-      {
-          var ventana = document.getElementById("winNotice3");
-          ventana.style.marginTop = "100px";
-          ventana.style.display = "block";
-      }
-      function closeContactar()
-      {
-          var ventana = document.getElementById("winContactar");
-          ventana.style.display = "none";
-      }
-      function closeNotice1()
-      {
-          var ventana = document.getElementById("winNotice1");
-          ventana.style.display = "none";
-      }
-      function closeNotice2()
-      {
-          var ventana = document.getElementById("winNotice2");
-          ventana.style.display = "none";
-      }
-      function closeNotice3()
-      {
-          var ventana = document.getElementById("winNotice3");
-          ventana.style.display = "none";
-      }
-    </script>
-    <script>
-      $(".active").trigger('click');
-    </script>
 
   </body>
 </html>
