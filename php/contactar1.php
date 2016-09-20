@@ -8,8 +8,10 @@ $emailPHP = $_POST['email'];
 $companyPHP = $_POST['company'];
 $messagePHP = $_POST['message'];
 
+$copyEmailPHP = "contacto@lappsii.com";
+
 //variables del Correo
-$destino = "contacto@lappsii.com, $emailPHP";
+$destino = "$copyEmailPHP,$emailPHP";
 
 $asunto = "Mensaje de Lappsii";
 
