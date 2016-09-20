@@ -1,0 +1,17 @@
+  
+  /* DEVELOPER */
+
+  Web Developer: Jesus Ricano 
+  Technology: Frontend & Backend
+  Email: racing_rica@hotmail.com
+  Web site: www.lappsii.com
+  From: Mexico City
+
+
+  /* SITE */
+
+  Language: Spanish
+  Doctype: HTML5
+  Components-Frontend: Html5, Css3, Java-Script, jQuery, Bootstrap y Emmet
+  Components-Backend: Php, MySQL
+  IDE: Sublime Text, Brackets, FileZilla, Squel Pro, Photoshop
