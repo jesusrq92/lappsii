@@ -9,9 +9,9 @@ $companyPHP = $_POST['company'];
 $messagePHP = $_POST['message'];
 
 //variables del Correo
-$destino = "contacto@lappsii.com";
+$destino = "contacto@lappsii.com, $emailPHP";
 
-$asunto = "Notificacion de Lappsii";
+$asunto = "Mensaje de Lappsii";
 
 $template = file_get_contents('LAPPSII.html');
 $template = str_replace('%name%', $namePHP,$template);
@@ -21,14 +21,13 @@ $template = str_replace('%message%', $messagePHP,$template);
 $template = str_replace('\r\n','<br>', $template);
 
 
-// $header  = "From: Lappsii <contacto@lappsii.com>";
-// $header .= "Reply-To: " .$emailPHP. "\r\n";
-$header = "Content-Type: text/html";
-
+$header  = "From: Lappsii <contacto@lappsii.com>\r\n";
+$header .= "Reply-To: " .$emailPHP. "\r\n";
+$header .= "Content-Type: text/html\r\n";
         
 
 //Envio del correo
-$enviado = mail("$destino,$emailPHP", $asunto, $template, $header);
+$enviado = mail($destino, $asunto, $template, $header);
 
 if($enviado){
     echo '
@@ -61,6 +60,5 @@ if($enviado){
           </div>
 	     ';
     }
-
 
 ?>
