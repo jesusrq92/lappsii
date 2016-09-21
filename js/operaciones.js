@@ -1,4 +1,5 @@
 // modales
+
       function contactar()
       {
           var ventana = document.getElementById("winContactar");
