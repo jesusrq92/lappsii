@@ -85,6 +85,10 @@ ul {
   font-size: 20px;
 }
 
+.fix{
+  margin-right: 39px !important;
+}
+
 
 /* ==============================
    modales
@@ -3482,13 +3486,14 @@ span.icon-close {
   .nav-logo{
   position: absolute;
   display: initial;
-  margin-left: -85px !important;
-  width: 66px !important;
-  animation: animateLogo 1.5s ease infinite alternate;
+  margin-left: -75px !important;
+  width: 43px !important;
+  padding-top: 6px;
+  animation: animateLogo 1s infinite alternate;
   }
   @keyframes animateLogo {
-    from {margin-top: 0;}
-    to {margin-top: 10px;}
+    from {margin-top: -3px;}
+    to {margin-top: 3px;}
   }
   .modalEstilos{
     width: 90%;
